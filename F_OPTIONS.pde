@@ -53,21 +53,41 @@ void optionsClicks () {
 
   if (mouseX > 100 && mouseX < 250 && mouseY > 100 && mouseY < 250) {
     icon1On = !icon1On;
+    icon3On = false;
+    icon5On = false;
+    icon7On = false;
+    icon9On = false;
   }
 
   if (mouseX > 330 && mouseX < 480 && mouseY > 100 && mouseY < 250) {
+    icon1On = false;
     icon3On = !icon3On;
+    icon5On = false;
+    icon7On = false;
+    icon9On = false;
   }
 
   if (mouseX > 560 && mouseX < 710 && mouseY > 100 && mouseY < 250) {
+    icon1On = false;
+    icon3On = false;
     icon5On = !icon5On;
+    icon7On = false;
+    icon9On = false;
   }
 
   if (mouseX > 215 && mouseX < 365 && mouseY > 300 && mouseY < 450) {
+    icon1On = false;
+    icon3On = false;
+    icon5On = false;
     icon7On = !icon7On;
+    icon9On = false;
   }
 
   if (mouseX > 455 && mouseX < 605 && mouseY > 300 && mouseY < 450) {
+    icon1On = false;
+    icon3On = false;
+    icon5On = false;
+    icon7On = false;
     icon9On = !icon9On;
   }
 

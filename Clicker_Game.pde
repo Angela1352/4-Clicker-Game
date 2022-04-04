@@ -36,7 +36,7 @@ color pink        = #FFCFD2;
 color orange      = #FDE4CF;
 color yellow      = #FBF8CC;
 color lightBlue   = #90DBF4;
-color darkBlue    = #A3C4F3;
+color purple      = #A3C4F3;
 color turquoise   = #98F5E1;
 color green       = #B9FBC0;
 
@@ -47,6 +47,7 @@ AudioPlayer theme, coin, bump, gameover;
 
 
 //OTHER VARIABLES
+int counter;
 PImage selectedIcon;
 float ant, ant2;
 boolean iconOn, icon1On;
@@ -97,6 +98,8 @@ void setup () {
   //initialize ant
   ant = -40;
   ant2 = 800;
+  
+  counter = 0;
 }
 
 
@@ -160,7 +163,14 @@ void tactile2(int x, int y, int w, int h) {
 //HIGH SCORE BUTTON
 
 
-//intro game: 2 each
+//intro game: 2 each sounds turned off
 
-//when i beat score sometimes, theres undefined symbol
+
 //have to choose icon before playing game or crash
+
+
+
+
+
+//indicator
+//slider

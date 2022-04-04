@@ -1,15 +1,17 @@
 void intro () {
- // theme.play();
- // gameover.pause();
+  // theme.play();
+  // gameover.pause();
   background(orange);
-  tint(255, 200);
   image(picnic, 400, 400, 800, 800);
 
 
   // textFont();
   textSize(80);
   textFont(candy);
+  fill(0);
   text("FRUIT CLICKER", 400, 290);
+  fill(green);
+  text("FRUIT CLICKER", 394, 287);
 
   strokeWeight(4);
   fill(pink);
@@ -24,7 +26,6 @@ void intro () {
   text ("options", 600, 490);
 
   //fruits
-  noTint();
   image(watermelon, 120, 120, 190, 200);
   image(orangeIcon, 680, 690, 150, 150);
   image(pomegranate, 250, 160, 100, 100);
@@ -90,9 +91,6 @@ void intro () {
   ant = ant + 7;
   ant2 = ant2 - 5;
 
-  if (ant > 900) {
-    ant = -400;
-  }
 
   if (ant2 < -100) {
     ant2 = 1200;

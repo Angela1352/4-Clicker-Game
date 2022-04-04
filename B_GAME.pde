@@ -3,9 +3,14 @@ void game () {
   image(background, 400, 400, 800, 800);
 
   //pause button
-  stroke(0);
-  fill(255);
-  circle(100, 100, 100);
+  strokeWeight(4);
+  fill(pink);
+  tactile(700, 40, 60, 60);
+  rect(700, 40, 60, 60);
+  stroke(purple);
+  strokeWeight(6);
+  triangle(715, 54, 715, 86, 745, 70);
+
 
   //display target
   fill(0);
@@ -41,7 +46,7 @@ void gameClicks () {
     coin.play();
     vx = vx * 1.1;
     vy = vy * 1.1;
-  } else if (dist(mouseX, mouseY, 100, 100) < 152) {
+  } else if (mouseX > 700 && mouseX < 760 && mouseY > 40 && mouseY < 100) {
     mode = PAUSE;
   } else {
     lives = lives - 1;
