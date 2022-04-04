@@ -10,3 +10,43 @@ void reset() {
   ant = -40;
   ant2 = 800;
 }
+
+void icon1OnOff () {
+  if (icon1On == true) {
+    stroke(lightBlue);
+  } else {
+    stroke(0);
+  }
+}
+
+void icon3OnOff () {
+  if (icon3On == true) {
+    stroke(lightBlue);
+  } else {
+    stroke(0);
+  }
+}
+
+void icon5OnOff () {
+  if (icon5On == true) {
+    stroke(lightBlue);
+  } else {
+    stroke(0);
+  }
+}
+
+void icon7OnOff () {
+  if (icon7On == true) {
+    stroke(lightBlue);
+  } else {
+    stroke(0);
+  }
+}
+
+void icon9OnOff () {
+  if (icon9On == true) {
+    stroke(lightBlue);
+  } else {
+    stroke(0);
+  }
+}

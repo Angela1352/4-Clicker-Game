@@ -11,7 +11,8 @@ void game () {
   fill(0);
   stroke(0);
   strokeWeight(5);
-  circle(x, y, d);
+  //circle(x, y, d);
+  image(selectedIcon, x, y, 152, 152);
 
   //text
   textSize(40);
@@ -21,6 +22,7 @@ void game () {
   //moving
   x = x + vx;
   y = y + vy;
+
 
   //bouncing
   if (x < d/2 || x > width-d/2) {
@@ -33,13 +35,13 @@ void game () {
 
 
 void gameClicks () {
-  if (dist(mouseX, mouseY, x, y) < 50) {
+  if (dist(mouseX, mouseY, x, y) < 152) {
     score  = score + 1;
     coin.rewind();
     coin.play();
     vx = vx * 1.1;
     vy = vy * 1.1;
-  } else if (dist(mouseX, mouseY, 100, 100) < 50) {
+  } else if (dist(mouseX, mouseY, 100, 100) < 152) {
     mode = PAUSE;
   } else {
     lives = lives - 1;

@@ -1,7 +1,7 @@
 void gameover () {
   background(0, 255, 0);
-  theme.pause();
-  gameover.play();
+ // theme.pause();
+ // gameover.play();
 
   textFont(endgame);
   text("GAMEOVER", 400, 300);
@@ -11,7 +11,7 @@ void gameover () {
   //highscore
   if (score > highscore) {
     highscore = score;
-  } 
+  }
 }
 
 
