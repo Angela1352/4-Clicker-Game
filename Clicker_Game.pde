@@ -47,13 +47,21 @@ AudioPlayer theme, coin, bump, gameover;
 
 
 //OTHER VARIABLES
+PImage selectedIcon;
 float ant, ant2;
+boolean iconOn, icon1On;
+boolean icon2On, icon3On;
+boolean icon4On, icon5On;
+boolean icon6On, icon7On;
+boolean icon8On, icon9On;
 
 
 void setup () {
   size(800, 800);
   mode = INTRO;
   textAlign(CENTER, CENTER);
+
+  selectedIcon = watermelon;
 
   candy    = createFont("Candy.ttf", 100);
   endgame  = createFont("Endgame.otf", 100);
@@ -155,3 +163,4 @@ void tactile2(int x, int y, int w, int h) {
 //intro game: 2 each
 
 //when i beat score sometimes, theres undefined symbol
+//have to choose icon before playing game or crash
