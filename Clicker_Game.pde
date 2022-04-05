@@ -153,24 +153,9 @@ void tactile2(int x, int y, int w, int h) {
 
 
 //TO DO:
-//SLIDER FOR SIZE
-//PAUSE BUTTON: TOP RIGHT CORNER
-//PAUSE BUTTON: TEXT || AND >
-//TEXT: SCORE AND LIVES BOTTOM LEFT AND RIGHT... HEART?
-
-
-//GAMEOVER: PLAY AGAIN BUTTON
-//HIGH SCORE BUTTON
-
-
 //intro game: 2 each sounds turned off
-
-
 //have to choose icon before playing game or crash
 
-
-
-
-
+//target bounce
 //indicator
-//slider
+//slider: size

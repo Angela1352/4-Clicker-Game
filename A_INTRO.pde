@@ -1,6 +1,6 @@
 void intro () {
-  // theme.play();
-  // gameover.pause();
+  //theme.play();
+  //gameover.pause();
   background(orange);
   image(picnic, 400, 400, 800, 800);
 

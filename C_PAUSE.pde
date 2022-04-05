@@ -15,9 +15,8 @@ void pause () {
   rect(700, 40, 60, 60);
   textSize(40);
   stroke(purple);
-  strokeWeight(8);
-  line(720, 54, 720, 86);
-  line(740, 54, 740, 86);
+  strokeWeight(6);
+  triangle(715, 54, 715, 86, 745, 70);
 }
 
 

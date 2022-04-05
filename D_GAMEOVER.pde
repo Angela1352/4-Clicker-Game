@@ -1,7 +1,7 @@
 void gameover () {
   image(picnic, 400, 400, 800, 800);
-  // theme.pause();
-  // gameover.play();
+  //theme.pause();
+  //gameover.play();
 
   textFont(endgame);
   textSize(150);
