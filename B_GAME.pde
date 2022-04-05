@@ -17,8 +17,7 @@ void game () {
   fill(0);
   stroke(0);
   strokeWeight(5);
-  //circle(x, y, d);
-  image(selectedIcon, x, y, 152, 152);
+  image(selectedIcon, x, y, size, size);
 
   //text
   textSize(40);
@@ -41,7 +40,7 @@ void game () {
 
 
 void gameClicks () {
-  if (dist(mouseX, mouseY, x, y) < 152) {
+  if (dist(mouseX, mouseY, x, y) < size/2) {
     score  = score + 1;
     coin.rewind();
     coin.play();

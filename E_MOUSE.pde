@@ -11,3 +11,9 @@ void  mouseReleased () {
     optionsClicks();
   }
 }
+
+void mouseDragged () {
+  if (mode == OPTIONS) {
+    optionsDragged();
+  }
+}

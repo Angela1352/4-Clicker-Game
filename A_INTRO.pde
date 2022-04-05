@@ -26,11 +26,11 @@ void intro () {
   text ("options", 600, 490);
 
   //fruits
-  image(watermelon, 120, 120, 190, 200);
+  image(watermelon, 120, 120, 160, 160);
   image(orangeIcon, 680, 690, 150, 150);
   image(pomegranate, 250, 160, 100, 100);
   image(kiwi, 580, 680, 120, 120);
-  image(avocado, 120, 680, 120, 140);
+  image(avocado, 120, 680, 120, 120);
 
   //ant1
   fill(0);

@@ -48,6 +48,7 @@ AudioPlayer theme, coin, bump, gameover;
 
 //OTHER VARIABLES
 int counter;
+float slider, size;
 PImage selectedIcon;
 float ant, ant2;
 boolean iconOn, icon1On;
@@ -61,8 +62,6 @@ void setup () {
   size(800, 800);
   mode = INTRO;
   textAlign(CENTER, CENTER);
-
-  selectedIcon = watermelon;
 
   candy    = createFont("Candy.ttf", 100);
   endgame  = createFont("Endgame.otf", 100);
@@ -79,12 +78,13 @@ void setup () {
   //target initialization
   x = width/2;
   y = height/2;
-  d = 100;
+  d = 300;
   vx = random(-5, 5);
   vy = random(-5, 5);
   score = 0;
   lives = 3;
   highscore = 0;
+  size = 150;
 
   reset();
 
@@ -98,8 +98,12 @@ void setup () {
   //initialize ant
   ant = -40;
   ant2 = 800;
-  
+
   counter = 0;
+
+  selectedIcon = watermelon;
+
+  slider = 630;
 }
 
 
@@ -121,41 +125,9 @@ void draw () {
 }
 
 
-void tactile(int x, int y, int w, int h) {
-  if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+w) {
-    stroke(lightBlue);
-  } else {
-    stroke(0);
-  }
-}
-
-void tactile2(int x, int y, int w, int h) {
-  if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+w) {
-    fill(green);
-  } else {
-    fill(yellow);
-  }
-}
-
-
-
-
-
-//void button(int x, int y, int w, int h) {
-//  if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+w) {
-
-//  }
-//}
-
-
-
-
-
 
 //TO DO:
 //intro game: 2 each sounds turned off
-//have to choose icon before playing game or crash
 
 //target bounce
-//indicator
-//slider: size
+//exit button

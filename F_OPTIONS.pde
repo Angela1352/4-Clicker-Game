@@ -13,9 +13,9 @@ void options () {
   tactile2(560, 100, 150, 150);
   icon5OnOff();
   rect(560, 100, 150, 150);
-  image(watermelon, 175, 182, 180, 190);
-  image(orangeIcon, 405, 175, 152, 152);
-  image(kiwi, 635, 175, 138, 138);
+  image(watermelon, 175, 175, 138, 138);
+  image(orangeIcon, 405, 175, 138, 138);
+  image(kiwi, 635, 175, 134, 134);
 
   tactile2(215, 300, 150, 150);
   icon7OnOff();
@@ -23,23 +23,34 @@ void options () {
   tactile2(455, 300, 150, 150);
   icon9OnOff();
   rect(455, 300, 150, 150);
-  image(avocado, 288, 370, 140, 170);
-  image(pomegranate, 532, 375, 152, 152);
+  image(avocado, 288, 375, 138, 138);
+  image(pomegranate, 532, 375, 138, 138);
 
   //home
   fill(pink);
   stroke(0);
-  tactile(300, 550, 200, 100);
-  rect(300, 550, 200, 100);
+  tactile(100, 570, 200, 100);
+  rect(100, 570, 200, 100);
   fill(0);
   textSize(60);
-  text("home", 400, 585);
+  text("home", 200, 605);
 
   //indicator
-  fill(pink);
+  fill(yellow);
   stroke(0);
-  circle(100, 550, 180);
-  //image(selectedIcon, 50, 500);
+  rect(520, 510, 200, 200);
+  image(selectedIcon, 620, 610, size, size);
+
+  //slider for size
+  stroke(0);
+  strokeWeight(8);
+  line(410, 530, 410, 730);
+  fill(purple);
+  strokeWeight(6);
+  tactile3(410, slider, 40);
+  circle(410, slider, 40);
+
+  size = map(slider, 730, 530, 100, 190);
 }
 
 
@@ -47,7 +58,7 @@ void options () {
 
 
 void optionsClicks () {
-  if (mouseX > 300 && mouseX < 500 && mouseY > 550 && mouseY < 650) {
+  if (mouseX > 100 && mouseX < 300 && mouseY > 570 && mouseY < 670) {
     mode =  INTRO;
   }
 
@@ -102,6 +113,13 @@ void optionsClicks () {
   } else if (icon9On == true) {
     selectedIcon = pomegranate;
   }
+
+  controlSlider();
+}
+
+
+void optionsDragged () {
+  controlSlider();
 }
 
 
