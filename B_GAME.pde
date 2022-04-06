@@ -12,7 +12,6 @@ void game () {
   line(720, 54, 720, 86);
   line(740, 54, 740, 86);
 
-
   //display target
   fill(0);
   stroke(0);
@@ -28,12 +27,11 @@ void game () {
   x = x + vx;
   y = y + vy;
 
-
   //bouncing
-  if (x < d/2 || x > width-d/2) {
+  if (x < size/2 || x > width-size/2) {
     vx = vx * -1;
   }
-  if (y < d/2 || y > height-d/2) {
+  if (y < size/2 || y > height-size/2) {
     vy = vy * -1;
   }
 }

@@ -77,6 +77,7 @@ void icon9OnOff () {
   }
 }
 
+
 void controlSlider () {
   if (mouseX > 400 && mouseX < 420 && mouseY > 530 && mouseY < 730) {
     slider = mouseY;

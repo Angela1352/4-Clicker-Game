@@ -25,6 +25,7 @@ PFont endgame;
 PImage watermelon, orangeIcon, kiwi, pomegranate, avocado;
 PImage background, picnic;
 
+
 //TARGET VARIABLES
 float x, y, d;
 float vx, vy; //target velocity
@@ -123,11 +124,3 @@ void draw () {
     println("Error: Mode = " + mode);
   }
 }
-
-
-
-//TO DO:
-//intro game: 2 each sounds turned off
-
-//target bounce
-//exit button

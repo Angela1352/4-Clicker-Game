@@ -2,7 +2,6 @@ void options () {
   background(orange);
 
   //fruit icons
-
   strokeWeight(4);
   tactile2(100, 100, 150, 150);
   icon1OnOff();
@@ -52,9 +51,6 @@ void options () {
 
   size = map(slider, 730, 530, 100, 190);
 }
-
-
-
 
 
 void optionsClicks () {
@@ -121,6 +117,3 @@ void optionsClicks () {
 void optionsDragged () {
   controlSlider();
 }
-
-
-//stroke lightBlue and darkBlue

@@ -1,7 +1,7 @@
 void gameover () {
   image(picnic, 400, 400, 800, 800);
-  //theme.pause();
-  //gameover.play();
+  theme.pause();
+  gameover.play();
 
   textFont(endgame);
   textSize(150);
@@ -17,7 +17,6 @@ void gameover () {
   if (score > highscore) {
     highscore = score;
   }
-
 
   noTint();
   image(watermelon, 120, 120, 160, 160);
@@ -67,10 +66,20 @@ void gameover () {
     textSize(40);
     text("press anywhere to continue", 400, 620);
   } else if (counter > 15 ) {
+    if (counter == 40) {
+      counter = 0;
+    }
   }
-  if (counter == 40) {
-    counter = 0;
-  }
+
+  //exit button
+  fill(pink);
+  strokeWeight(4);
+  tactile(650, 40, 100, 50);
+  rect(650, 40, 100, 50);
+  fill(0);
+  textFont(candy);
+  textSize(40);
+  text("Exit", 700, 60);
 }
 
 
@@ -79,4 +88,8 @@ void gameoverClicks () {
   reset();
   theme.rewind();
   gameover.rewind();
+
+  if (mouseX > 650 && mouseX < 750 && mouseY > 40 && mouseY < 90) {
+    exit();
+  }
 }

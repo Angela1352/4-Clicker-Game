@@ -1,9 +1,8 @@
 void intro () {
-  //theme.play();
-  //gameover.pause();
+  theme.play();
+  gameover.pause();
   background(orange);
   image(picnic, 400, 400, 800, 800);
-
 
   // textFont();
   textSize(80);
@@ -60,7 +59,6 @@ void intro () {
   line(ant+80, 588, ant+95, 585);
   line(ant+80, 592, ant+95, 595);
 
-
   //ant2
   ellipse(ant2+79, 390, 20, 20);
   ellipse(ant2+65, 390, 10, 10);
@@ -91,12 +89,10 @@ void intro () {
   ant = ant + 7;
   ant2 = ant2 - 5;
 
-
   if (ant2 < -100) {
     ant2 = 1200;
   }
 }
-
 
 
 void introClicks () {
